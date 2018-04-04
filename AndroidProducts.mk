@@ -18,3 +18,13 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/full_loki.mk \
     $(LOCAL_DIR)/lineage_loki.mk \
     $(LOCAL_DIR)/twrp_loki.mk
+
+COMMON_LUNCH_CHOICES := \
+    full_loki-eng \
+    full_loki-user \
+    full_loki-userdebug \
+    lineage_loki-eng \
+    lineage_loki-user \
+    lineage_loki-userdebug \
+    twrp_loki-eng \
+    twrp_loki-userdebug
