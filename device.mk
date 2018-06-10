@@ -29,6 +29,10 @@ include device/nvidia/touch/raydium.mk
 
 $(call inherit-product, device/nvidia/loki/vendor/loki-vendor.mk)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += \
+    device/nvidia/loki/overlay
+
 # Init related
 PRODUCT_PACKAGES += \
     rel29.rc
