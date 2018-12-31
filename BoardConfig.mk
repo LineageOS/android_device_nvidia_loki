@@ -29,3 +29,5 @@ TARGET_RECOVERY_PIXEL_FORMAT :=
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := false
 BOARD_VNDK_VERSION                     :=
 PRODUCT_FULL_TREBLE_OVERRIDE           := false
+
+include device/nvidia/touch/BoardConfigTouch.mk

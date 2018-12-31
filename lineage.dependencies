@@ -6,5 +6,9 @@
  {
    "repository": "android_device_nvidia_t124-common",
    "target_path": "device/nvidia/t124-common"
+ },
+ {
+   "repository": "android_device_nvidia_touch",
+   "target_path": "device/nvidia/touch"
  }
 ]
