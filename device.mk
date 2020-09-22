@@ -17,3 +17,6 @@
 TARGET_TEGRA_KERNEL   ?= 3.10
 
 $(call inherit-product, device/nvidia/foster/device.mk)
+
+# HIDL
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
