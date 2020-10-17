@@ -33,6 +33,9 @@ TARGET_LD_SHIM_LIBS += \
     /vendor/lib64/egl/libEGL_tegra.so|/vendor/lib64/libnvos_shim.so
 endif
 
+# Legacy memfd
+TARGET_HAS_MEMFD_BACKPORT := true
+
 # Nvmm shims
 ifeq ($(TARGET_TEGRA_OMX),nvmm-r29)
 TARGET_LD_SHIM_LIBS += \
