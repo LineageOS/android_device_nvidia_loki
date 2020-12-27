@@ -21,3 +21,8 @@ TARGET_KERNEL_SOURCE          := kernel/nvidia/shield
 TARGET_KERNEL_CONFIG          := tegra21_android_defconfig
 TARGET_KERNEL_RECOVERY_CONFIG :=
 BOARD_KERNEL_IMAGE_NAME       := zImage
+
+# Treble
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := false
+BOARD_VNDK_VERSION                     :=
+PRODUCT_FULL_TREBLE_OVERRIDE           := false
