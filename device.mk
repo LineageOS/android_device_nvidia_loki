@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+TARGET_TEGRA_CAMERA   ?= none
 TARGET_TEGRA_KERNEL   ?= 3.10
 
 $(call inherit-product, device/nvidia/foster/device.mk)
