@@ -16,8 +16,14 @@
 
 TARGET_TEGRA_CAMERA   ?= none
 TARGET_TEGRA_KERNEL   ?= 3.10
+TARGET_TEGRA_KEYSTORE ?= nvkeystore-t124
 
 $(call inherit-product, device/nvidia/foster/device.mk)
 
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
+# Keystore
+ifeq ($(TARGET_TEGRA_KEYSTORE),nvkeystore-t124)
+$(call inherit-product, vendor/nvidia/t124/keystore/keystore.mk)
+endif
