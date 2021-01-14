@@ -1,0 +1,18 @@
+on boot
+# Power management settings
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor interactive
+    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor interactive
+
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/target_loads
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_rate
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/boost_factor
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+    write /sys/devices/system/cpu/cpufreq/interactive/io_busy_threshold 50
+
+    write /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq 1020000
+    write /sys/devices/system/cpu/cpufreq/interactive/target_loads "65 228000:75 1020000:85"
+    write /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay 19000
+    write /sys/devices/system/cpu/cpufreq/interactive/timer_rate 20000

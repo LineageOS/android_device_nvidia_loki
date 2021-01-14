@@ -29,6 +29,10 @@ include device/nvidia/touch/raydium.mk
 
 $(call inherit-product, device/nvidia/loki/vendor/loki-vendor.mk)
 
+# Init related
+PRODUCT_PACKAGES += \
+    rel29.rc
+
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
