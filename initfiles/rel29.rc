@@ -16,3 +16,12 @@ on boot
     write /sys/devices/system/cpu/cpufreq/interactive/target_loads "65 228000:75 1020000:85"
     write /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay 19000
     write /sys/devices/system/cpu/cpufreq/interactive/timer_rate 20000
+
+# Good driver settings
+    # default value for 0x523dc5 in d3doglregs.rky is 0.5
+    setprop persist.tegra.0x523dc5 0x3f000000
+    setprop persist.tegra.58027529 0x00000002
+    setprop persist.tegra.a3456abe 0x087F6080
+
+# WAR for bug 1536227: Restrict all ZBC clears to transparent black:
+    setprop persist.tegra.AF73C63E 0x80007ffd
