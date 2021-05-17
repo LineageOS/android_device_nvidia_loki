@@ -1,0 +1,1 @@
+nv-tegra-t210-rel29	https://nv-tegra.nvidia.com/gitweb/?p=tegra/prebuilts-licensed-binary-tlk-t210.git;a=blob_plain;f=extract-nv-bins.sh;hb=ece734398b768c087d4a5edf36313ea884b3bcc3		git	prebuilt/t210/target/product/t210

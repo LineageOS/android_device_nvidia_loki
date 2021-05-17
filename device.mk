@@ -15,8 +15,10 @@
 #
 
 TARGET_TEGRA_CAMERA   ?= none
+TARGET_TEGRA_GPU      ?= nvgpu-r29
 TARGET_TEGRA_KERNEL   ?= 3.10
 TARGET_TEGRA_KEYSTORE ?= nvkeystore-t124
+TARGET_TEGRA_OMX      ?= nvmm-r29
 
 # Only include Shield apps for first party targets
 include device/nvidia/shield-common/shield.mk
@@ -25,10 +27,12 @@ $(call inherit-product, device/nvidia/foster/device.mk)
 include device/nvidia/icera/icera.mk
 include device/nvidia/touch/raydium.mk
 
+$(call inherit-product, device/nvidia/loki/vendor/loki-vendor.mk)
+
 # HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 
 # Keystore
 ifeq ($(TARGET_TEGRA_KEYSTORE),nvkeystore-t124)
-$(call inherit-product, vendor/nvidia/t124/keystore/keystore.mk)
+$(call inherit-product, device/nvidia/t124-common/vendor/keystore/keystore.mk)
 endif
