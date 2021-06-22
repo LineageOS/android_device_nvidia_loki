@@ -16,6 +16,9 @@
 
 include device/nvidia/foster/BoardConfig.mk
 
+# Bootloader Versions
+TARGET_BOARD_INFO_FILE :=
+
 # Kernel
 TARGET_KERNEL_SOURCE          := kernel/nvidia/shield
 TARGET_KERNEL_CONFIG          := tegra21_android_defconfig
@@ -29,6 +32,9 @@ TARGET_RECOVERY_PIXEL_FORMAT :=
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := false
 BOARD_VNDK_VERSION                     :=
 PRODUCT_FULL_TREBLE_OVERRIDE           := false
+
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/nvidia/loki/releasetools
 
 include device/nvidia/icera/BoardConfigIcera.mk
 include device/nvidia/touch/BoardConfigTouch.mk
