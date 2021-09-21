@@ -30,4 +30,5 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := false
 BOARD_VNDK_VERSION                     :=
 PRODUCT_FULL_TREBLE_OVERRIDE           := false
 
+include device/nvidia/icera/BoardConfigIcera.mk
 include device/nvidia/touch/BoardConfigTouch.mk

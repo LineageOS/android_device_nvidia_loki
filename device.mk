@@ -19,6 +19,7 @@ TARGET_TEGRA_KERNEL   ?= 3.10
 TARGET_TEGRA_KEYSTORE ?= nvkeystore-t124
 
 $(call inherit-product, device/nvidia/foster/device.mk)
+include device/nvidia/icera/icera.mk
 include device/nvidia/touch/raydium.mk
 
 # HIDL
