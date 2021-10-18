@@ -22,6 +22,9 @@ TARGET_KERNEL_CONFIG          := tegra21_android_defconfig
 TARGET_KERNEL_RECOVERY_CONFIG :=
 BOARD_KERNEL_IMAGE_NAME       := zImage
 
+# Recovery
+TARGET_RECOVERY_PIXEL_FORMAT :=
+
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := false
 BOARD_VNDK_VERSION                     :=
