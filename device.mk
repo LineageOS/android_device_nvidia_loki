@@ -18,6 +18,9 @@ TARGET_TEGRA_CAMERA   ?= none
 TARGET_TEGRA_KERNEL   ?= 3.10
 TARGET_TEGRA_KEYSTORE ?= nvkeystore-t124
 
+# Only include Shield apps for first party targets
+include device/nvidia/shield-common/shield.mk
+
 $(call inherit-product, device/nvidia/foster/device.mk)
 include device/nvidia/icera/icera.mk
 include device/nvidia/touch/raydium.mk
