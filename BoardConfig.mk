@@ -31,6 +31,13 @@ TARGET_LD_SHIM_LIBS += \
     /vendor/lib64/libglcore.so|/system/lib64/libutilscallstack.so
 endif
 
+# Nvmm shims
+ifeq ($(TARGET_TEGRA_OMX),nvmm-r29)
+TARGET_LD_SHIM_LIBS += \
+  /vendor/lib/libnvomxadaptor.so|/system/lib/libmedia_omx.so \
+  /vendor/lib/libnvomxadaptor.so|/vendor/lib/libnvmm_shim.so
+endif
+
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT :=
 

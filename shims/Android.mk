@@ -9,6 +9,14 @@ $(PROTOBUF_SYMLINK):
 ALL_DEFAULT_INSTALLED_MODULES += $(PROTOBUF_SYMLINK)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE           := libnvmm_shim
+LOCAL_SRC_FILES        := $(T124_SHIMS)/nvmm_connect.cpp
+LOCAL_MULTILIB         := 32
+LOCAL_SHARED_LIBRARIES := libstagefright
+LOCAL_VENDOR_MODULE    := true
+include $(BUILD_SHARED_LIBRARY)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE           := libphs
 LOCAL_SRC_FILES        := $(T124_SHIMS)/dummy.cpp
 LOCAL_SHARED_LIBRARIES := libnvphs
