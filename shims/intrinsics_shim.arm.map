@@ -1,0 +1,29 @@
+LIBC_DEPRECATED {
+  global:
+    s_aeabi_d2lz; # arm
+    s_aeabi_d2ulz; # arm
+    s_aeabi_f2lz; # arm
+    s_aeabi_f2ulz; # arm
+};
+
+LIBC_PRIVATE {
+  global:
+    s_aeabi_l2d; # arm
+    s_aeabi_ul2d; # arm
+    s_aeabi_l2f; # arm
+    s_aeabi_ul2f; # arm
+    s_aeabi_unwind_cpp_pr0; # arm
+    s_aeabi_unwind_cpp_pr1; # arm
+    sUnwind_Complete; # arm
+    sUnwind_DeleteException; # arm
+    sUnwind_GetDataRelBase; # arm
+    sUnwind_GetLanguageSpecificData; # arm
+    sUnwind_GetRegionStart; # arm
+    sUnwind_GetTextRelBase; # arm
+    sUnwind_RaiseException; # arm
+    sUnwind_Resume; # arm
+    sUnwind_Resume_or_Rethrow; # arm
+    sUnwind_VRS_Get; # arm
+    sUnwind_VRS_Set; # arm
+    s_gnu_unwind_frame; # arm
+};

@@ -26,7 +26,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_MODULE_RELATIVE_PATH := hw
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := hwcomposer.tegra
@@ -39,7 +39,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_MODULE_RELATIVE_PATH := hw
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := vulkan.tegra
@@ -52,7 +52,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_MODULE_RELATIVE_PATH := hw
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libEGL_tegra
@@ -65,7 +65,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_MODULE_RELATIVE_PATH := egl
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libGLESv1_CM_tegra
@@ -78,7 +78,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_MODULE_RELATIVE_PATH := egl
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libGLESv2_tegra
@@ -91,7 +91,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_MODULE_RELATIVE_PATH := egl
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libglcore
@@ -105,7 +105,7 @@ LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_REQUIRED_MODULES     := com.nvidia.nvsi.xml
 LOCAL_SHARED_LIBRARIES     := libutilscallstack
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvblit
@@ -117,7 +117,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvddk_2d_v2
@@ -129,7 +129,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvddk_vic
@@ -141,7 +141,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvglsi
@@ -154,7 +154,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_REQUIRED_MODULES     := libnvwsi
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvgr
@@ -166,7 +166,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvhwc_service
@@ -179,7 +179,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_REQUIRED_MODULES     := libcuda
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvrmapi_tegra
@@ -191,7 +191,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvrm_graphics
@@ -203,7 +203,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvrm_gpu
@@ -215,7 +215,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvrm
@@ -227,7 +227,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvwsi
@@ -239,7 +239,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libcuda
@@ -251,7 +251,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvcolorutil
@@ -263,7 +263,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvdc
@@ -275,7 +275,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvimp
@@ -287,7 +287,7 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvidia-fatbinaryloader
@@ -300,7 +300,7 @@ LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_REQUIRED_MODULES     := libnvidia-ptxjitcompiler
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvidia-ptxjitcompiler
@@ -312,4 +312,4 @@ LOCAL_MODULE_CLASS         := SHARED_LIBRARIES
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)

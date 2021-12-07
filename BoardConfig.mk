@@ -25,6 +25,12 @@ TARGET_KERNEL_CONFIG          := tegra21_android_defconfig
 TARGET_KERNEL_RECOVERY_CONFIG :=
 BOARD_KERNEL_IMAGE_NAME       := zImage
 
+# Graphics
+ifeq ($(TARGET_TEGRA_GPU),nvgpu-r29)
+TARGET_LD_SHIM_LIBS += \
+    /vendor/lib64/libglcore.so|/system/lib64/libutilscallstack.so
+endif
+
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT :=
 

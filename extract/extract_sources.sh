@@ -16,3 +16,4 @@
 
 SOURCE_PATHS+=("loki");
 FILELIST_PATHS+=("loki");
+PATCH_PATHS+=("loki");

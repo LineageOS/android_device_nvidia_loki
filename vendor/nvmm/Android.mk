@@ -24,7 +24,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmm
@@ -35,7 +35,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmm_audio
@@ -46,7 +46,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmm_contentpipe
@@ -57,7 +57,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmm_parser
@@ -68,7 +68,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmm_utils
@@ -79,7 +79,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmm_writer
@@ -90,7 +90,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmmlite
@@ -101,7 +101,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmmlite_audio
@@ -112,7 +112,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmmlite_image
@@ -123,7 +123,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmmlite_utils
@@ -134,7 +134,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmmlite_video
@@ -145,7 +145,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvomx
@@ -158,7 +158,7 @@ LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
 LOCAL_REQUIRED_MODULES     := libnvmm_parser libnvmmlite_image libnvmmlite_video
 LOCAL_REQUIRED_MODULES_arm := libnvmm_audio libnvmm_writer libnvmmlite_audio
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvomxadaptor
@@ -169,7 +169,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvomxilclient
@@ -180,7 +180,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvparser
@@ -191,7 +191,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvmedia
@@ -203,7 +203,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvtnr
@@ -214,7 +214,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libnvtvmr
@@ -225,7 +225,7 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE               := libstagefrighthw
@@ -237,4 +237,4 @@ LOCAL_MODULE_TARGET_ARCH   := arm
 LOCAL_MODULE_TAGS          := optional
 LOCAL_MODULE_OWNER         := nvidia
 LOCAL_VENDOR_MODULE        := true
-include $(BUILD_NVIDIA_ARCH_PREBUILT)
+include $(BUILD_NVIDIA_PREBUILT)
