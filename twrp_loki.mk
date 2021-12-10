@@ -14,7 +14,13 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_loki.mk \
-    $(LOCAL_DIR)/lineage_loki.mk \
-    $(LOCAL_DIR)/twrp_loki.mk
+# Inherit some common twrp stuff.
+$(call inherit-product, vendor/twrp/config/common.mk)
+
+# Inherit device configuration for loki.
+include device/nvidia/foster/lineage.mk
+$(call inherit-product, device/nvidia/loki/full_loki.mk)
+
+PRODUCT_NAME := twrp_loki
+PRODUCT_DEVICE := loki
+LINEAGE_BUILD := loki
