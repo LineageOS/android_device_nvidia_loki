@@ -28,7 +28,9 @@ BOARD_KERNEL_IMAGE_NAME       := zImage
 # Graphics
 ifeq ($(TARGET_TEGRA_GPU),nvgpu-r29)
 TARGET_LD_SHIM_LIBS += \
-    /vendor/lib64/libglcore.so|/system/lib64/libutilscallstack.so
+    /vendor/lib64/libglcore.so|/system/lib64/libutilscallstack.so \
+    /vendor/lib/egl/libEGL_tegra.so|/vendor/lib/libnvos_shim.so \
+    /vendor/lib64/egl/libEGL_tegra.so|/vendor/lib64/libnvos_shim.so
 endif
 
 # Nvmm shims
