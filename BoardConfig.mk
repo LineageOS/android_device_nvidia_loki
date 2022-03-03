@@ -15,3 +15,9 @@
 #
 
 include device/nvidia/foster/BoardConfig.mk
+
+# Kernel
+TARGET_KERNEL_SOURCE          := kernel/nvidia/shield
+TARGET_KERNEL_CONFIG          := tegra21_android_defconfig
+TARGET_KERNEL_RECOVERY_CONFIG :=
+BOARD_KERNEL_IMAGE_NAME       := zImage
