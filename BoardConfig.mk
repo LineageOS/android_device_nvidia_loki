@@ -16,6 +16,11 @@
 
 include device/nvidia/foster/BoardConfig.mk
 
+# Boot image
+BOARD_CUSTOM_BOOTIMG    := flase
+BOARD_CUSTOM_BOOTIMG_MK :=
+BOARD_MKBOOTIMG_ARGS    :=
+
 # Bootloader Versions
 TARGET_BOARD_INFO_FILE :=
 
