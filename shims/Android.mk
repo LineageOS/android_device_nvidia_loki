@@ -1,5 +1,4 @@
 LOCAL_PATH := $(call my-dir)
-T124_SHIMS := $(LOCAL_PATH)/../../t124-common/shims
 
 PROTOBUF_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libprotobuf-cpp-lite-3.9.1.so
 $(PROTOBUF_SYMLINK):
@@ -10,7 +9,7 @@ ALL_DEFAULT_INSTALLED_MODULES += $(PROTOBUF_SYMLINK)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE           := libnvmm_shim
-LOCAL_SRC_FILES        := $(T124_SHIMS)/nvmm_connect.cpp
+LOCAL_SRC_FILES        := nvmm_connect.cpp
 LOCAL_MULTILIB         := 32
 LOCAL_SHARED_LIBRARIES := libstagefright
 LOCAL_VENDOR_MODULE    := true
@@ -18,7 +17,7 @@ include $(BUILD_SHARED_LIBRARY)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE           := libphs
-LOCAL_SRC_FILES        := $(T124_SHIMS)/dummy.cpp
+LOCAL_SRC_FILES        := dummy.cpp
 LOCAL_SHARED_LIBRARIES := libnvphs
 LOCAL_VENDOR_MODULE    := true
 include $(BUILD_SHARED_LIBRARY)

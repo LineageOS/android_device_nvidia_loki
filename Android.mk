@@ -14,12 +14,6 @@
 
 ifeq ($(TARGET_DEVICE), loki)
 LOCAL_PATH := $(call my-dir)
-COMMON_BUILD_PATH := device/nvidia/tegra-common/vendor/build
-T124_PATH := device/nvidia/t124-common/vendor
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
-
-include $(COMMON_BUILD_PATH)/macros.mk
-include $(T124_PATH)/keystore/Android.mk
-include $(T124_PATH)/security/Android.mk
 endif
