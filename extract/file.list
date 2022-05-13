@@ -79,3 +79,11 @@ nv-tegra-t210-rel29	vendor/lib/libnvtnr.so			loki/nvmm/lib/libnvtnr.so
 nv-tegra-t210-rel29	vendor/lib/libnvparser.so		loki/nvmm/lib/libnvparser.so
 nv-tegra-t210-rel29	vendor/lib/libnvavp.so			loki/nvmm/lib/libnvavp.so
 nv-tegra-t210-rel29	vendor/lib/libnvmedia.so		loki/nvmm/lib/libnvmedia.so
+
+# Security
+nv-tegra-t210-rel29	vendor/lib/libtlk_secure_hdcp_up.so	loki/security/lib/libtlk_secure_hdcp_up.so
+nv-tegra-t210-rel29	vendor/lib/libtsechdcp.so		loki/security/lib/libtsechdcp.so
+nv-tegra-t210-rel29	vendor/lib/libtsec_wrapper.so		loki/security/lib/libtsec_wrapper.so
+nv-tegra-t210-rel29	vendor/lib64/libtlk_secure_hdcp_up.so	loki/security/lib64/libtlk_secure_hdcp_up.so
+nv-tegra-t210-rel29	vendor/lib64/libtsechdcp.so		loki/security/lib64/libtsechdcp.so
+nv-tegra-t210-rel29	vendor/lib64/libtsec_wrapper.so		loki/security/lib64/libtsec_wrapper.so
