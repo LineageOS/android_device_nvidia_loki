@@ -41,6 +41,14 @@ LOCAL_VENDOR_MODULE        := true
 LOCAL_MODULE_RELATIVE_PATH := hw
 include $(BUILD_NVIDIA_PREBUILT)
 
+REL29_VULKAN_SYMLINKS := \
+  $(TARGET_OUT_VENDOR)/lib64/vulkan.tegra.so \
+  $(TARGET_OUT_VENDOR)/lib/vulkan.tegra.so
+$(REL29_VULKAN_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
+	$(hide) ln -sf ./hw/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(REL29_VULKAN_SYMLINKS)
+
 include $(CLEAR_VARS)
 LOCAL_MODULE               := vulkan.tegra
 LOCAL_SRC_FILES_32         := $(LOKI_NVGPU_PATH)/lib/hw/vulkan.tegra.so
