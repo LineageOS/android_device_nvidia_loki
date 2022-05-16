@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d38b1e13_10898116",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 14048
+      },
+      "writtenOn": "2022-05-16T18:26:37Z",
+      "side": 1,
+      "message": "Chain verified on loki_e_wifi",
+      "revId": "f17f45a9bb45450ea2bd701ae4f2d1d66a5afb4a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
