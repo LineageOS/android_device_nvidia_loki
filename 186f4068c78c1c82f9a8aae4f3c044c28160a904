@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b5fdf994_428a7493",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2022-05-16T18:45:50Z",
+      "side": 1,
+      "message": "I can imagine the amount of bad changes that are merged with this kind of review...",
+      "revId": "186f4068c78c1c82f9a8aae4f3c044c28160a904",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
