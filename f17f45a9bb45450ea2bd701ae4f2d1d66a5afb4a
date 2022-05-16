@@ -16,6 +16,23 @@
       "message": "Chain verified on loki_e_wifi",
       "revId": "f17f45a9bb45450ea2bd701ae4f2d1d66a5afb4a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "79388757_6de841fb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2022-05-16T18:29:48Z",
+      "side": 1,
+      "message": "actually link the commit I sent you",
+      "revId": "f17f45a9bb45450ea2bd701ae4f2d1d66a5afb4a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
