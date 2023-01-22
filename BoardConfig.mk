@@ -60,4 +60,3 @@ PRODUCT_FULL_TREBLE_OVERRIDE           := false
 TARGET_RELEASETOOLS_EXTENSIONS := device/nvidia/loki/releasetools
 
 include device/nvidia/icera/BoardConfigIcera.mk
-include device/nvidia/touch/BoardConfigTouch.mk

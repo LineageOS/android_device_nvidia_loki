@@ -24,7 +24,6 @@ include device/nvidia/shield-common/shield.mk
 
 $(call inherit-product, device/nvidia/foster/device.mk)
 include device/nvidia/icera/icera.mk
-include device/nvidia/touch/raydium.mk
 
 $(call inherit-product, device/nvidia/loki/vendor/loki-vendor.mk)
 
